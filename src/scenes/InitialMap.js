@@ -1,4 +1,5 @@
 import Menu from "./Menu.js";
+import cursor_over from "../assets/images/cursor_over.png";
 import player from "../assets/tilemaps/tiles/player.png";
 import mapa_auxiliar from "../assets/images/mapa_auxiliar.jpg";
 import seta_baixo from "../assets/images/seta_baixo.png";
