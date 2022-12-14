@@ -7,7 +7,7 @@ import seta_cima from "../assets/images/seta_cima.png";
 import tiles_farm from "../assets/tilemaps/tiles/farm.png";
 import tiles_nature from "../assets/tilemaps/tiles/nature.png";
 import tiles_town from "../assets/tilemaps/tiles/town.png";
-import tiles_fishing from "../assets/tilemaps/tiles/town.png";
+import tiles_fishing from "../assets/tilemaps/tiles/fishing.png";
 import map from "../assets/tilemaps/maps/initial_map.json";
 
 export default class Scenes extends Phaser.Scene {
