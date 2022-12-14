@@ -1,6 +1,8 @@
+import profile_picture from "../assets/images/profile_picture.png";
+
 export default class Menu extends Phaser.Scene {
   preload() {
-    this.load.image("profile_picture", "src/assets/images/profile_picture.png");
+    this.load.image("profile_picture", profile_picture);
     this.load.image("show_project", "src/assets/images/show_project.png");
   }
   create() {

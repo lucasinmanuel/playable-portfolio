@@ -1,4 +1,5 @@
 import Menu from "./Menu.js";
+import mapa_auxiliar from "../assets/images/mapa_auxiliar.jpg";
 
 export default class Scenes extends Phaser.Scene {
   preload() {
@@ -8,7 +9,7 @@ export default class Scenes extends Phaser.Scene {
       startFrame: 0,
       endFrame: 31,
     });
-    this.load.image("mapa_auxiliar", "src/assets/images/mapa_auxiliar.jpg");
+    this.load.image("mapa_auxiliar", mapa_auxiliar);
     this.load.image("seta_baixo", "src/assets/images/seta_baixo.png");
     this.load.image("seta_cima", "src/assets/images/seta_cima.png");
     this.load.image("tiles_farm", "src/assets/tilemaps/tiles/farm.png");
