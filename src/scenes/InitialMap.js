@@ -2,36 +2,22 @@ import Menu from "./Menu.js";
 
 export default class Scenes extends Phaser.Scene {
   preload() {
-    this.load.spritesheet(
-      "player",
-      "../../public/assets/tilemaps/tiles/player.png",
-      { frameWidth: 16, frameHeight: 21, startFrame: 0, endFrame: 31 }
-    );
-    this.load.image(
-      "mapa_auxiliar",
-      "../../public/assets/images/mapa_auxiliar.jpg"
-    );
-    this.load.image("seta_baixo", "../../public/assets/images/seta_baixo.png");
-    this.load.image("seta_cima", "../../public/assets/images/seta_cima.png");
-    this.load.image(
-      "tiles_farm",
-      "../../public/assets/tilemaps/tiles/farm.png"
-    );
-    this.load.image(
-      "tiles_nature",
-      "../../public/assets/tilemaps/tiles/nature.png"
-    );
-    this.load.image(
-      "tiles_town",
-      "../../public/assets/tilemaps/tiles/town.png"
-    );
-    this.load.image(
-      "tiles_fishing",
-      "../../public/assets/tilemaps/tiles/fishing.png"
-    );
+    this.load.spritesheet("player", "src/assets/tilemaps/tiles/player.png", {
+      frameWidth: 16,
+      frameHeight: 21,
+      startFrame: 0,
+      endFrame: 31,
+    });
+    this.load.image("mapa_auxiliar", "src/assets/images/mapa_auxiliar.jpg");
+    this.load.image("seta_baixo", "src/assets/images/seta_baixo.png");
+    this.load.image("seta_cima", "src/assets/images/seta_cima.png");
+    this.load.image("tiles_farm", "src/assets/tilemaps/tiles/farm.png");
+    this.load.image("tiles_nature", "src/assets/tilemaps/tiles/nature.png");
+    this.load.image("tiles_town", "src/assets/tilemaps/tiles/town.png");
+    this.load.image("tiles_fishing", "src/assets/tilemaps/tiles/fishing.png");
     this.load.tilemapTiledJSON(
       "map",
-      "../../public/assets/tilemaps/maps/initial_map.json"
+      "src/assets/tilemaps/maps/initial_map.json"
     );
   }
   create() {
@@ -438,13 +424,13 @@ export default class Scenes extends Phaser.Scene {
           .image(this.camera.width - 24, this.camera.height - 34, "seta_baixo")
           .setDisplaySize(30, 50)
           .setInteractive({
-            cursor: "url(../../public/assets/images/cursor_over.png), pointer",
+            cursor: "url(src/assets/images/cursor_over.png), pointer",
           }),
         this.add
           .image(this.camera.width - 24, this.camera.height - 100, "seta_cima")
           .setDisplaySize(30, 50)
           .setInteractive({
-            cursor: "url(../../public/assets/images/cursor_over.png), pointer",
+            cursor: "url(src/assets/images/cursor_over.png), pointer",
           }),
         this.add.text(10, 15, "Alquimia Das Palavras", {
           fontStyle: "bold",
@@ -478,7 +464,7 @@ export default class Scenes extends Phaser.Scene {
             padding: 5,
           })
           .setInteractive({
-            cursor: "url(../../public/assets/images/cursor_over.png), pointer",
+            cursor: "url(src/assets/images/cursor_over.png), pointer",
           }),
         this.add
           .text(90, 500, "Deploy", {
@@ -486,7 +472,7 @@ export default class Scenes extends Phaser.Scene {
             padding: 5,
           })
           .setInteractive({
-            cursor: "url(../../public/assets/images/cursor_over.png), pointer",
+            cursor: "url(src/assets/images/cursor_over.png), pointer",
           }),
         this.add
           .text(this.camera.width - 29, 10, "X", {
@@ -494,7 +480,7 @@ export default class Scenes extends Phaser.Scene {
             fontStyle: "bold",
           })
           .setInteractive({
-            cursor: "url(../../public/assets/images/cursor_over.png), pointer",
+            cursor: "url(src/assets/images/cursor_over.png), pointer",
           }),
       ])
       .setDepth(3)
@@ -510,13 +496,13 @@ export default class Scenes extends Phaser.Scene {
           .image(this.camera.width - 24, this.camera.height - 34, "seta_baixo")
           .setDisplaySize(30, 50)
           .setInteractive({
-            cursor: "url(../../public/assets/images/cursor_over.png), pointer",
+            cursor: "url(src/assets/images/cursor_over.png), pointer",
           }),
         this.add
           .image(this.camera.width - 24, this.camera.height - 100, "seta_cima")
           .setDisplaySize(30, 50)
           .setInteractive({
-            cursor: "url(../../public/assets/images/cursor_over.png), pointer",
+            cursor: "url(src/assets/images/cursor_over.png), pointer",
           }),
         this.add.text(10, 15, "Herlivre", {
           fontStyle: "bold",
@@ -541,7 +527,7 @@ export default class Scenes extends Phaser.Scene {
             padding: 5,
           })
           .setInteractive({
-            cursor: "url(../../public/assets/images/cursor_over.png), pointer",
+            cursor: "url(src/assets/images/cursor_over.png), pointer",
           }),
         this.add
           .text(90, 365, "Deploy", {
@@ -549,7 +535,7 @@ export default class Scenes extends Phaser.Scene {
             padding: 5,
           })
           .setInteractive({
-            cursor: "url(../../public/assets/images/cursor_over.png), pointer",
+            cursor: "url(src/assets/images/cursor_over.png), pointer",
           }),
         this.add
           .text(this.camera.width - 29, 10, "X", {
@@ -557,7 +543,7 @@ export default class Scenes extends Phaser.Scene {
             fontStyle: "bold",
           })
           .setInteractive({
-            cursor: "url(../../public/assets/images/cursor_over.png), pointer",
+            cursor: "url(src/assets/images/cursor_over.png), pointer",
           }),
       ])
       .setDepth(3)
@@ -573,13 +559,13 @@ export default class Scenes extends Phaser.Scene {
           .image(this.camera.width - 24, this.camera.height - 34, "seta_baixo")
           .setDisplaySize(30, 50)
           .setInteractive({
-            cursor: "url(../../public/assets/images/cursor_over.png), pointer",
+            cursor: "url(src/assets/images/cursor_over.png), pointer",
           }),
         this.add
           .image(this.camera.width - 24, this.camera.height - 100, "seta_cima")
           .setDisplaySize(30, 50)
           .setInteractive({
-            cursor: "url(../../public/assets/images/cursor_over.png), pointer",
+            cursor: "url(src/assets/images/cursor_over.png), pointer",
           }),
         this.add.text(10, 15, "Stickers Generator", {
           fontStyle: "bold",
@@ -604,7 +590,7 @@ export default class Scenes extends Phaser.Scene {
             padding: 5,
           })
           .setInteractive({
-            cursor: "url(../../public/assets/images/cursor_over.png), pointer",
+            cursor: "url(src/assets/images/cursor_over.png), pointer",
           }),
         this.add
           .text(90, 415, "Deploy", {
@@ -612,7 +598,7 @@ export default class Scenes extends Phaser.Scene {
             padding: 5,
           })
           .setInteractive({
-            cursor: "url(../../public/assets/images/cursor_over.png), pointer",
+            cursor: "url(src/assets/images/cursor_over.png), pointer",
           }),
         this.add
           .text(this.camera.width - 29, 10, "X", {
@@ -620,7 +606,7 @@ export default class Scenes extends Phaser.Scene {
             fontStyle: "bold",
           })
           .setInteractive({
-            cursor: "url(../../public/assets/images/cursor_over.png), pointer",
+            cursor: "url(src/assets/images/cursor_over.png), pointer",
           }),
       ])
       .setDepth(3)
@@ -636,13 +622,13 @@ export default class Scenes extends Phaser.Scene {
           .image(this.camera.width - 24, this.camera.height - 34, "seta_baixo")
           .setDisplaySize(30, 50)
           .setInteractive({
-            cursor: "url(../../public/assets/images/cursor_over.png), pointer",
+            cursor: "url(src/assets/images/cursor_over.png), pointer",
           }),
         this.add
           .image(this.camera.width - 24, this.camera.height - 100, "seta_cima")
           .setDisplaySize(30, 50)
           .setInteractive({
-            cursor: "url(../../public/assets/images/cursor_over.png), pointer",
+            cursor: "url(src/assets/images/cursor_over.png), pointer",
           }),
         this.add.text(10, 15, "Rick And Morty API", {
           fontStyle: "bold",
@@ -672,7 +658,7 @@ export default class Scenes extends Phaser.Scene {
             padding: 5,
           })
           .setInteractive({
-            cursor: "url(../../public/assets/images/cursor_over.png), pointer",
+            cursor: "url(src/assets/images/cursor_over.png), pointer",
           }),
         this.add
           .text(90, 415, "Deploy", {
@@ -680,7 +666,7 @@ export default class Scenes extends Phaser.Scene {
             padding: 5,
           })
           .setInteractive({
-            cursor: "url(../../public/assets/images/cursor_over.png), pointer",
+            cursor: "url(src/assets/images/cursor_over.png), pointer",
           }),
         this.add
           .text(this.camera.width - 29, 10, "X", {
@@ -688,7 +674,7 @@ export default class Scenes extends Phaser.Scene {
             fontStyle: "bold",
           })
           .setInteractive({
-            cursor: "url(../../public/assets/images/cursor_over.png), pointer",
+            cursor: "url(src/assets/images/cursor_over.png), pointer",
           }),
       ])
       .setDepth(3)

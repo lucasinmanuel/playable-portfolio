@@ -1,17 +1,11 @@
 export default class Menu extends Phaser.Scene {
   preload() {
-    this.load.image(
-      "profile_picture",
-      "../../public/assets/images/profile_picture.png"
-    );
-    this.load.image(
-      "show_project",
-      "../../public/assets/images/show_project.png"
-    );
+    this.load.image("profile_picture", "src/assets/images/profile_picture.png");
+    this.load.image("show_project", "src/assets/images/show_project.png");
   }
   create() {
     this.input.setDefaultCursor(
-      "url(../../public/assets/images/cursor_default.png), pointer"
+      "url(src/assets/images/cursor_default.png), pointer"
     );
 
     this.width = this.game.config.width * 2;
@@ -35,7 +29,7 @@ export default class Menu extends Phaser.Scene {
         shadow: { color: "black", offsetX: -1.2, fill: true, stroke: true },
       })
       .setInteractive({
-        cursor: "url(../../public/assets/images/cursor_over.png), pointer",
+        cursor: "url(src/assets/images/cursor_over.png), pointer",
       });
 
     //ADD BOTÃO TUTORIAL
@@ -46,7 +40,7 @@ export default class Menu extends Phaser.Scene {
         shadow: { color: "black", offsetX: -1.2, fill: true, stroke: true },
       })
       .setInteractive({
-        cursor: "url(../../public/assets/images/cursor_over.png), pointer",
+        cursor: "url(src/assets/images/cursor_over.png), pointer",
       });
 
     //ADD BOTÃO ABOUT ME
@@ -57,7 +51,7 @@ export default class Menu extends Phaser.Scene {
         shadow: { color: "black", offsetX: -1.2, fill: true, stroke: true },
       })
       .setInteractive({
-        cursor: "url(../../public/assets/images/cursor_over.png), pointer",
+        cursor: "url(src/assets/images/cursor_over.png), pointer",
       });
 
     //TEXTO DO TUTORIAL
@@ -91,7 +85,7 @@ export default class Menu extends Phaser.Scene {
             padding: 5,
           })
           .setInteractive({
-            cursor: "url(../../public/assets/images/cursor_over.png), pointer",
+            cursor: "url(src/assets/images/cursor_over.png), pointer",
           }),
         this.add
           .text(this.game.config.width - 101, 223, "LinkdIn", {
@@ -99,7 +93,7 @@ export default class Menu extends Phaser.Scene {
             padding: 5,
           })
           .setInteractive({
-            cursor: "url(../../public/assets/images/cursor_over.png), pointer",
+            cursor: "url(src/assets/images/cursor_over.png), pointer",
           }),
       ])
       .setVisible(false);
@@ -112,7 +106,7 @@ export default class Menu extends Phaser.Scene {
       this.tutorialText.setVisible(false);
       this.aboutMeText.setVisible(false);
       this.input.setDefaultCursor(
-        "url(../../public/assets/images/cursor_default.png), pointer"
+        "url(src/assets/images/cursor_default.png), pointer"
       );
     });
 
