@@ -1,14 +1,14 @@
 import profile_picture from "../assets/images/profile_picture.png";
+import show_project from "../assets/images/show_project.png";
+import cursor_default from "../assets/images/cursor_default.png";
 
 export default class Menu extends Phaser.Scene {
   preload() {
     this.load.image("profile_picture", profile_picture);
-    this.load.image("show_project", "src/assets/images/show_project.png");
+    this.load.image("show_project", show_project);
   }
   create() {
-    this.input.setDefaultCursor(
-      "url(src/assets/images/cursor_default.png), pointer"
-    );
+    this.input.setDefaultCursor("url(" + cursor_default + "), pointer");
 
     this.width = this.game.config.width * 2;
     this.height = this.game.config.height * 2;
