@@ -244,14 +244,14 @@ export default class Scenes extends Phaser.Scene {
 
         this.alquimia.children.getArray()[9].on("pointerdown", function () {
           window.open(
-            "https://github.com/LucasInmanuel/stickers-generator",
+            "https://github.com/LucasInmanuel/alquimia-das-palavras",
             "_blank"
           );
         });
 
         this.alquimia.children.getArray()[10].on("pointerdown", function () {
           window.open(
-            "https://stickers-generator-front-end-deploy.vercel.app/",
+            "http://alquimia-das-palavras-deploy.vercel.app/",
             "_blank"
           );
         });
