@@ -1,6 +1,7 @@
 import profile_picture from "../assets/images/profile_picture.png";
 import show_project from "../assets/images/show_project.png";
 import cursor_default from "../assets/images/cursor_default.png";
+import cursor_over from "../assets/images/cursor_over.png";
 
 export default class Menu extends Phaser.Scene {
   preload() {
@@ -31,7 +32,7 @@ export default class Menu extends Phaser.Scene {
         shadow: { color: "black", offsetX: -1.2, fill: true, stroke: true },
       })
       .setInteractive({
-        cursor: "url(src/assets/images/cursor_over.png), pointer",
+        cursor: "url(" + cursor_over + "), pointer",
       });
 
     //ADD BOTÃO TUTORIAL
@@ -42,7 +43,7 @@ export default class Menu extends Phaser.Scene {
         shadow: { color: "black", offsetX: -1.2, fill: true, stroke: true },
       })
       .setInteractive({
-        cursor: "url(src/assets/images/cursor_over.png), pointer",
+        cursor: "url(" + cursor_over + "), pointer",
       });
 
     //ADD BOTÃO ABOUT ME
@@ -53,7 +54,7 @@ export default class Menu extends Phaser.Scene {
         shadow: { color: "black", offsetX: -1.2, fill: true, stroke: true },
       })
       .setInteractive({
-        cursor: "url(src/assets/images/cursor_over.png), pointer",
+        cursor: "url(" + cursor_over + "), pointer",
       });
 
     //TEXTO DO TUTORIAL
@@ -87,7 +88,7 @@ export default class Menu extends Phaser.Scene {
             padding: 5,
           })
           .setInteractive({
-            cursor: "url(src/assets/images/cursor_over.png), pointer",
+            cursor: "url(" + cursor_over + "), pointer",
           }),
         this.add
           .text(this.game.config.width - 101, 223, "LinkdIn", {
@@ -95,7 +96,7 @@ export default class Menu extends Phaser.Scene {
             padding: 5,
           })
           .setInteractive({
-            cursor: "url(src/assets/images/cursor_over.png), pointer",
+            cursor: "url(" + cursor_over + "), pointer",
           }),
       ])
       .setVisible(false);
@@ -107,9 +108,7 @@ export default class Menu extends Phaser.Scene {
       this.aboutMeBtn.disableInteractive();
       this.tutorialText.setVisible(false);
       this.aboutMeText.setVisible(false);
-      this.input.setDefaultCursor(
-        "url(src/assets/images/cursor_default.png), pointer"
-      );
+      this.input.setDefaultCursor("url(" + cursor_default + "), pointer");
     });
 
     this.tutorialBtn.on(Phaser.Input.Events.POINTER_DOWN, () => {
