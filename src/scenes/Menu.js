@@ -98,6 +98,14 @@ export default class Menu extends Phaser.Scene {
           .setInteractive({
             cursor: "url(" + cursor_over + "), pointer",
           }),
+        this.add
+          .text(this.game.config.width - 91, 256, "E-mail", {
+            backgroundColor: "darkblue",
+            padding: 5,
+          })
+          .setInteractive({
+            cursor: "url(" + cursor_over + "), pointer",
+          }),
       ])
       .setVisible(false);
 
@@ -130,6 +138,13 @@ export default class Menu extends Phaser.Scene {
       .getArray()[3]
       .on(Phaser.Input.Events.POINTER_DOWN, () => {
         window.open("https://www.linkedin.com/in/lucasinmanuel/", "_blank");
+      });
+
+    this.aboutMeText.children
+      .getArray()[4]
+      .on(Phaser.Input.Events.POINTER_DOWN, () => {
+        navigator.clipboard.writeText("lucasemanuel2077@gmail.com");
+        alert("O E-mail: lucasemanuel2077@gmail.com foi copiado!");
       });
 
     this.input.keyboard.on("keydown", (e) => {
